@@ -29,6 +29,7 @@ import qualified Duckling.Temperature.FR.Rules as Temperature
 import qualified Duckling.Time.FR.Rules as Time
 import qualified Duckling.TimeGrain.FR.Rules as TimeGrain
 import qualified Duckling.Volume.FR.Rules as Volume
+import qualified Duckling.PhoneNumber.FR.Rules as PhoneNumber
 
 defaultRules :: Some Dimension -> [Rule]
 defaultRules = langRules
@@ -44,7 +45,7 @@ langRules (This Duration) = Duration.rules
 langRules (This Email) = Email.rules
 langRules (This Numeral) = Numeral.rules
 langRules (This Ordinal) = Ordinal.rules
-langRules (This PhoneNumber) = []
+langRules (This PhoneNumber) = PhoneNumber.rules
 langRules (This Quantity) = Quantity.rules
 langRules (This RegexMatch) = []
 langRules (This Temperature) = Temperature.rules

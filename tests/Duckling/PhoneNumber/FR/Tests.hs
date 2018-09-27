@@ -6,18 +6,18 @@
 -- of patent rights can be found in the PATENTS file in the same directory.
 
 
-module Duckling.PhoneNumber.PT.Tests
-  ( tests
-  ) where
+module Duckling.PhoneNumber.FR.Tests
+( tests
+) where
 
 import Data.String
 import Test.Tasty
 
 import Duckling.Dimensions.Types
-import Duckling.PhoneNumber.PT.Corpus
+import Duckling.PhoneNumber.FR.Corpus
 import Duckling.Testing.Asserts
 
 tests :: TestTree
-tests = testGroup "PT Tests"
-  [ makeCorpusTest [This PhoneNumber] corpus
-  ]
+tests = testGroup "FR Tests"
+    [ makeCorpusTest [This PhoneNumber] corpus
+    ]
