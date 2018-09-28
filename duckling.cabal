@@ -486,6 +486,8 @@ library
                      -- PhoneNumber
                      , Duckling.PhoneNumber.PT.Corpus
                      , Duckling.PhoneNumber.PT.Rules
+                     , Duckling.PhoneNumber.FR.Rules
+                     , Duckling.PhoneNumber.FR.Corpus
                      , Duckling.PhoneNumber.Corpus
                      , Duckling.PhoneNumber.Rules
                      , Duckling.PhoneNumber.Types
@@ -889,6 +891,7 @@ test-suite duckling-test
 
                      -- PhoneNumber
                      , Duckling.PhoneNumber.PT.Tests
+                     , Duckling.PhoneNumber.FR.Tests
                      , Duckling.PhoneNumber.Tests
 
                      -- Quantity

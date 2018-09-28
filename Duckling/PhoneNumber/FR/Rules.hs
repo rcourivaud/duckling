@@ -24,9 +24,9 @@ rulePhoneNumber = Rule
     -- otherwise due to backtracking the regexp will take very long time
     -- or run out of stack for some inputs.
     [ regex $
-        "(?:(?:\\+|00)33|0)" ++ -- area code
-        "\\s*[0-9]"      ++ -- first number
-        "(?:[\\s.-]*\\d{2,3}){3,4}" --nums
+        "(?:(?:\\+|00)33|0|)" ++ -- area code
+        "\\s*[1-9]"      ++ -- first number
+        "(?:[\\s.-]{0,1}\\d{2,3}){3,4}" --nums
     ]
   , prod = \xs -> case xs of
       (Token RegexMatch (GroupMatch (code:nums:ext:_)):_) ->
